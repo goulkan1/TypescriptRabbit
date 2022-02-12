@@ -20,7 +20,7 @@ var Product = /** @class */ (function () {
     ], Product.prototype, "id", void 0);
     __decorate([
         (0, typeorm_1.Column)({ unique: true }),
-        __metadata("design:type", String)
+        __metadata("design:type", Number)
     ], Product.prototype, "admin_id", void 0);
     __decorate([
         (0, typeorm_1.Column)(),
@@ -33,7 +33,7 @@ var Product = /** @class */ (function () {
     __decorate([
         (0, typeorm_1.Column)({ default: 0 }),
         __metadata("design:type", Number)
-    ], Product.prototype, "Likes", void 0);
+    ], Product.prototype, "likes", void 0);
     Product = __decorate([
         (0, typeorm_1.Entity)()
     ], Product);

@@ -1,19 +1,19 @@
-import { Column, Entity, ObjectIdColumn, PrimaryGeneratedColumn } from "typeorm"
+import { Column, Entity, ObjectIdColumn } from "typeorm";
 
 @Entity()
 export class Product {
     @ObjectIdColumn()
-    id: string
+    id: string;
 
     @Column({ unique: true })
-    admin_id: string
+    admin_id: number;
 
     @Column()
-    title: string
+    title: string;
 
     @Column()
-    image: string
+    image: string;
 
     @Column({ default: 0 })
-    Likes: number
+    likes: number;
 }
